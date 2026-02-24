@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CV | Jhos - Developer</title>
+  <meta name="description" content="CV y portafolio de programador. Proyectos, skills y contacto." />
+  <link rel="icon" href="/img/cv.png" />
+  <link rel="stylesheet" href="/styles/index.css" />
+</head>
+
+<body>
+  <!-- Topbar -->
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <img class="logo-img" src="/img/logo.jpeg" alt="Logo" />
+      <span class="brand-text">
+        <span class="brand-title">Jhos</span>
+        <span class="brand-sub">Full-Stack Developer</span>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a href="#about">Sobre mí</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+
+    <div class="actions">
+      <button id="themeBtn" class="btn ghost" type="button" title="Cambiar tema">🌙</button>
+      <button class="btn" id="hireBtn" type="button">Contrátame</button>
+      <button id="menuBtn" class="btn ghost mobile" type="button" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="#about">Sobre mí</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#contact">Contacto</a>
+  </div>
+
+  <!-- Hero -->
+  <main id="home" class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <div class="kicker">Disponible para proyectos</div>
+        <h1>
+          Hola, soy <span class="grad">Jhos</span><br />
+          Programador y creador de apps web.
+        </h1>
+        <p class="lead">
+          Construyo experiencias web rápidas, bonitas y seguras.
+          Me gusta hacer productos completos: frontend, backend, base de datos y despliegue.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn" href="#projects">Ver proyectos</a>
+          <a class="btn ghost" href="#about">Conocer más</a>
+        </div>
+
+        <div class="chips">
+          <span class="chip">⚡ Frontend</span>
+          <span class="chip">🧠 Backend</span>
+          <span class="chip">🔐 Buenas prácticas</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="avatar-wrap">
+          <img class="avatar" src="/img/iam.jpeg" alt="Foto de Jhos" />
+          <div class="ring"></div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num" >+10</div>
+            <div class="stat-label">Proyectos</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-counter="6">0</div>
+            <div class="stat-label">Tecnologías</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-counter="3">0</div>
+            <div class="stat-label">Años aprendiendo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>Sobre mí</h2>
+       
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Perfil</h3>
+          <p>
+            Soy desarrollador enfocado en crear aplicaciones web completas.
+            Me gusta el diseño limpio, la velocidad, y que todo se sienta “premium”.
+          </p>
+
+          <div class="info">
+            <div class="info-row">
+              <span class="muted">Ubicación</span>
+              <span>Nicaragua</span>
+            </div>
+            <div class="info-row">
+              <span class="muted">Rol</span>
+              <span>Full-Stack</span>
+            </div>
+            <div class="info-row">
+              <span class="muted">Intereses</span>
+              <span>UI/UX • Backend • Seguridad</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Lo que ofrezco</h3>
+          <ul class="list">
+            <li>✅ Landing pages modernas y rápidas</li>
+            <li>✅ Apps web con login, roles, panel admin</li>
+            <li>✅ Bases de datos y APIs</li>
+            <li>✅ Deploy (Render / GitHub Pages / VPS)</li>
+          </ul>
+
+          <div class="badges">
+            <span class="badge">Responsive</span>
+            <span class="badge">UI Premium</span>
+            <span class="badge">Código limpio</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p>Estas son las tecnologías que manejo (editables).</p>
+      </div>
+
+      <div class="skills">
+        <div class="skill card">
+          <h3>Frontend</h3>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Responsive UI</span>
+          </div>
+        </div>
+
+        <div class="skill card">
+          <h3>Backend</h3>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Auth / Sessions</span>
+            <span class="tag">APIs</span>
+          </div>
+        </div>
+
+        <div class="skill card">
+          <h3>DB & Tools</h3>
+          <div class="tags">
+            <span class="tag">SQLite</span>
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Deploy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Proyectos</h2>
+        <p>Buscá y filtrá mis proyectos.</p>
+      </div>
+
+      <div class="project-tools">
+        <input id="searchInput" class="input" placeholder="Buscar (ej: flask, chat, admin)..." />
+        <div class="filters" id="filters">
+            <button class="pill active" data-filter="all">Todos</button>
+            <button class="pill" data-filter="c">C</button>
+            <button class="pill" data-filter="android">Android</button>
+            <button class="pill" data-filter="backend">Backend</button>
+            <button class="pill" data-filter="ui">UI</button>
+        </div>
+      </div>
+
+      <div id="projectsGrid" class="projects-grid"></div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2>Contacto</h2>
+        <p>Si querés que te haga una web o una app, aquí me encontrás.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Escríbeme</h3>
+
+          <div class="contact-row">
+            <span class="muted">Email</span>
+            <div class="contact-actions">
+              <a id="emailLink" href="mailto:tuemail@correo.com">josephpcss50@correo.com</a>
+              <button id="copyEmail" class="btn ghost" type="button">Copiar</button>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <span class="muted">GitHub</span>
+            <a href="https://github.com/css40" target="_blank" rel="noreferrer">https://github.com/css40</a>
+          </div>
+
+          <div class="contact-row">
+            <span class="muted">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/jhos-a-857145269/" target="_blank" rel="noreferrer">https://www.linkedin.com/in/jhos-a-857145269/</a>
+          </div>
+
+          <div class="toast" id="toast">Copiado ✅</div>
+        </div>
+
+        <div class="card">
+          <h3>Descargar CV</h3>
+
+        <a class="btn" href="cv/Joseph_CV_Developer.pdf" download>
+        Descargar CV (PDF)
+        </a>
+
+          <div class="footer-mini">
+            <span class="muted">Desarrollado por</span>
+            <strong>Jhos</strong> 🚀
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Jhos — Portafolio / CV</span>
+      <a href="#home">Volver arriba ↑</a>
+    </footer>
+  </main>
+  <!-- Modal Contrátame -->
+<div class="modal" id="hireModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close="true"></div>
+
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="hireTitle">
+    <div class="modal-head">
+      <div>
+        <h3 id="hireTitle">Contactame</h3>
+        <p class="muted">Elegí por dónde querés escribirme 👇</p>
+      </div>
+      <button class="btn ghost" id="closeHire" type="button" aria-label="Cerrar">✕</button>
+    </div>
+
+    <div class="modal-body">
+      <a class="contact-btn" href="mailto:josephpcss50@gmail.com">
+        <span class="icon">📧</span>
+        <div class="info">
+          <div class="label">Correo</div>
+          <div class="value">josephpcss50@gmail.com</div>
+        </div>
+        <img class="go-icon" src="/img/flecha-correcta.png" alt="Ir">
+      </a>
+
+      <a class="contact-btn" href="https://wa.me/50582503807" target="_blank" rel="noreferrer">
+        <span class="icon">💬</span>
+        <div class="info">
+          <div class="label">WhatsApp</div>
+          <div class="value">+505 8250 3807</div>
+        </div>
+        <img class="go-icon" src="/img/flecha-correcta.png" alt="Ir">
+      </a>
+
+      <a class="contact-btn" href="#" target="_blank" rel="noreferrer" id="linkedinLink">
+        <span class="icon">💼</span>
+        <div class="info">
+          <div class="label">LinkedIn</div>
+          <div class="value">https://www.linkedin.com/in/jhos-a-857145269/</div>
+        </div>
+        <img class="go-icon" src="/img/flecha-correcta.png" alt="Ir">
+      </a>
+
+      <div class="mini-grid">
+        <a class="mini" href="https://www.facebook.com/Jhosy001?locale=es_LA" target="_blank" rel="noreferrer" id="facebookLink">Facebook</a>
+        <a class="mini" href="https://www.instagram.com/jhossillygosse/" target="_blank" rel="noreferrer" id="instagramLink">Instagram</a>
+        <a class="mini" href="https://github.com/css40" target="_blank" rel="noreferrer" id="githubLink">GitHub</a>
+      </div>
+
+      <p class="hint muted">
+       LinkedIn / Facebook / Instagram / GitHub.
+      </p>
+    </div>
+  </div>
+</div>
+  <script src="/js/index.js"></script>
+</body>
+</html>
