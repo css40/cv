@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CV | Jhos - Developer</title>
   <meta name="description" content="CV y portafolio de programador. Proyectos, skills y contacto." />
   <link rel="icon" href="img/cv.png" />
@@ -76,7 +76,7 @@
 
         <div class="stats">
           <div class="stat">
-            <div class="stat-num" >+10</div>
+            <div class="stat-num">+10</div>
             <div class="stat-label">Proyectos</div>
           </div>
           <div class="stat">
@@ -95,7 +95,6 @@
     <section id="about" class="section">
       <div class="section-head">
         <h2>Sobre mí</h2>
-       
       </div>
 
       <div class="grid-2">
@@ -103,7 +102,7 @@
           <h3>Perfil</h3>
           <p>
             Soy desarrollador enfocado en crear aplicaciones web completas.
-            Me gusta el diseño limpio, la velocidad, y que todo se sienta “premium”.
+            Me gusta el diseño limpio, la velocidad y que todo se sienta “premium”.
           </p>
 
           <div class="info">
@@ -126,7 +125,7 @@
           <h3>Lo que ofrezco</h3>
           <ul class="list">
             <li>✅ Landing pages modernas y rápidas</li>
-            <li>✅ Apps web con login, roles, panel admin</li>
+            <li>✅ Apps web con login, roles y panel admin</li>
             <li>✅ Bases de datos y APIs</li>
             <li>✅ Deploy (Render / GitHub Pages / VPS)</li>
           </ul>
@@ -144,7 +143,7 @@
     <section id="skills" class="section">
       <div class="section-head">
         <h2>Skills</h2>
-        <p>Estas son las tecnologías que manejo (editables).</p>
+        <p>Estas son las tecnologías que manejo.</p>
       </div>
 
       <div class="skills">
@@ -188,13 +187,13 @@
       </div>
 
       <div class="project-tools">
-        <input id="searchInput" class="input" placeholder="Buscar (ej: flask, chat, admin)..." />
+        <input id="searchInput" class="input" type="text" placeholder="Buscar (ej: flask, chat, admin)..." />
         <div class="filters" id="filters">
-            <button class="pill active" data-filter="all">Todos</button>
-            <button class="pill" data-filter="c">C</button>
-            <button class="pill" data-filter="android">Android</button>
-            <button class="pill" data-filter="backend">Backend</button>
-            <button class="pill" data-filter="ui">UI</button>
+          <button class="pill active" data-filter="all" type="button">Todos</button>
+          <button class="pill" data-filter="c" type="button">C</button>
+          <button class="pill" data-filter="android" type="button">Android</button>
+          <button class="pill" data-filter="backend" type="button">Backend</button>
+          <button class="pill" data-filter="ui" type="button">UI</button>
         </div>
       </div>
 
@@ -215,7 +214,7 @@
           <div class="contact-row">
             <span class="muted">Email</span>
             <div class="contact-actions">
-              <a id="emailLink" href="mailto:tuemail@correo.com">josephpcss50@correo.com</a>
+              <a id="emailLink" href="mailto:josephpcss50@gmail.com">josephpcss50@gmail.com</a>
               <button id="copyEmail" class="btn ghost" type="button">Copiar</button>
             </div>
           </div>
@@ -227,7 +226,9 @@
 
           <div class="contact-row">
             <span class="muted">LinkedIn</span>
-            <a href="https://www.linkedin.com/in/jhos-a-857145269/" target="_blank" rel="noreferrer">https://www.linkedin.com/in/jhos-a-857145269/</a>
+            <a href="https://www.linkedin.com/in/jhos-a-857145269/" target="_blank" rel="noreferrer">
+              https://www.linkedin.com/in/jhos-a-857145269/
+            </a>
           </div>
 
           <div class="toast" id="toast">Copiado ✅</div>
@@ -236,9 +237,9 @@
         <div class="card">
           <h3>Descargar CV</h3>
 
-        <a class="btn" href="cv/Joseph_CV_Developer.pdf" download>
-        Descargar CV (PDF)
-        </a>
+          <a class="btn" href="cv/Joseph_CV_Developer.pdf" download>
+            Descargar CV (PDF)
+          </a>
 
           <div class="footer-mini">
             <span class="muted">Desarrollado por</span>
@@ -253,59 +254,61 @@
       <a href="#home">Volver arriba ↑</a>
     </footer>
   </main>
+
   <!-- Modal Contrátame -->
-<div class="modal" id="hireModal" aria-hidden="true">
-  <div class="modal-backdrop" data-close="true"></div>
+  <div class="modal" id="hireModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
 
-  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="hireTitle">
-    <div class="modal-head">
-      <div>
-        <h3 id="hireTitle">Contactame</h3>
-        <p class="muted">Elegí por dónde querés escribirme 👇</p>
-      </div>
-      <button class="btn ghost" id="closeHire" type="button" aria-label="Cerrar">✕</button>
-    </div>
-
-    <div class="modal-body">
-      <a class="contact-btn" href="mailto:josephpcss50@gmail.com">
-        <span class="icon">📧</span>
-        <div class="info">
-          <div class="label">Correo</div>
-          <div class="value">josephpcss50@gmail.com</div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="hireTitle">
+      <div class="modal-head">
+        <div>
+          <h3 id="hireTitle">Contáctame</h3>
+          <p class="muted">Elegí por dónde querés escribirme 👇</p>
         </div>
-        <img class="go-icon" src="img/flecha-correcta.png" alt="Ir">
-      </a>
-
-      <a class="contact-btn" href="https://wa.me/50582503807" target="_blank" rel="noreferrer">
-        <span class="icon">💬</span>
-        <div class="info">
-          <div class="label">WhatsApp</div>
-          <div class="value">+505 8250 3807</div>
-        </div>
-        <img class="go-icon" src="img/flecha-correcta.png" alt="Ir">
-      </a>
-
-      <a class="contact-btn" href="#" target="_blank" rel="noreferrer" id="linkedinLink">
-        <span class="icon">💼</span>
-        <div class="info">
-          <div class="label">LinkedIn</div>
-          <div class="value">https://www.linkedin.com/in/jhos-a-857145269/</div>
-        </div>
-        <img class="go-icon" src="img/flecha-correcta.png" alt="Ir">
-      </a>
-
-      <div class="mini-grid">
-        <a class="mini" href="https://www.facebook.com/Jhosy001?locale=es_LA" target="_blank" rel="noreferrer" id="facebookLink">Facebook</a>
-        <a class="mini" href="https://www.instagram.com/jhossillygosse/" target="_blank" rel="noreferrer" id="instagramLink">Instagram</a>
-        <a class="mini" href="https://github.com/css40" target="_blank" rel="noreferrer" id="githubLink">GitHub</a>
+        <button class="btn ghost" id="closeHire" type="button" aria-label="Cerrar">✕</button>
       </div>
 
-      <p class="hint muted">
-       LinkedIn / Facebook / Instagram / GitHub.
-      </p>
+      <div class="modal-body">
+        <a class="contact-btn" href="mailto:josephpcss50@gmail.com">
+          <span class="icon">📧</span>
+          <div class="info">
+            <div class="label">Correo</div>
+            <div class="value">josephpcss50@gmail.com</div>
+          </div>
+          <img class="go-icon" src="img/flecha-correcta.png" alt="Ir" />
+        </a>
+
+        <a class="contact-btn" href="https://wa.me/50582503807" target="_blank" rel="noreferrer">
+          <span class="icon">💬</span>
+          <div class="info">
+            <div class="label">WhatsApp</div>
+            <div class="value">+505 8250 3807</div>
+          </div>
+          <img class="go-icon" src="img/flecha-correcta.png" alt="Ir" />
+        </a>
+
+        <a class="contact-btn" href="https://www.linkedin.com/in/jhos-a-857145269/" target="_blank" rel="noreferrer" id="linkedinLink">
+          <span class="icon">💼</span>
+          <div class="info">
+            <div class="label">LinkedIn</div>
+            <div class="value">linkedin.com/in/jhos-a-857145269</div>
+          </div>
+          <img class="go-icon" src="img/flecha-correcta.png" alt="Ir" />
+        </a>
+
+        <div class="mini-grid">
+          <a class="mini" href="https://www.facebook.com/Jhosy001?locale=es_LA" target="_blank" rel="noreferrer" id="facebookLink">Facebook</a>
+          <a class="mini" href="https://www.instagram.com/jhossillygosse/" target="_blank" rel="noreferrer" id="instagramLink">Instagram</a>
+          <a class="mini" href="https://github.com/css40" target="_blank" rel="noreferrer" id="githubLink">GitHub</a>
+        </div>
+
+        <p class="hint muted">
+          LinkedIn / Facebook / Instagram / GitHub.
+        </p>
+      </div>
     </div>
   </div>
-</div>
+
   <script src="js/index.js"></script>
 </body>
 </html>
