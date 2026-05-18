@@ -8,7 +8,7 @@ const projects = [
     year: "2025-2026",
     desc: "Libro/documentación propia para aprender C, incluyendo ejemplos y programas con enfoque práctico.",
     tags: ["C", "Algoritmos", "Estructuras", "Gráficos"],
-    links: { demo: "#", code: "#" }
+    links: { demo: "#", code: "https://github.com/css40" }
   },
   {
     title: "Cajeros Automáticos (Simulador en C)",
@@ -16,7 +16,7 @@ const projects = [
     year: "2026",
     desc: "Sistema tipo ATM: usuarios, saldo, depósitos, retiros, historial y validaciones.",
     tags: ["C", "Archivos", "Validaciones", "Consola"],
-    links: { demo: "#", code: "#" }
+    links: { demo: "#", code: "https://github.com/css40" }
   },
   {
     title: "Casino en C (Cartas, Carreras, Billar)",
@@ -24,7 +24,7 @@ const projects = [
     year: "2026",
     desc: "Proyecto tipo casino con mini-juegos: cartas, carreras, billar y más, con lógica y puntuación.",
     tags: ["C", "Juegos", "Lógica", "Puntuación"],
-    links: { demo: "#", code: "#" }
+    links: { demo: "#", code: "https://github.com/css40" }
   },
   {
     title: "App Familiar (Kotlin)",
@@ -32,7 +32,7 @@ const projects = [
     year: "2026",
     desc: "App móvil donde familiares guardan perfiles y datos organizados.",
     tags: ["Kotlin", "Android", "CRUD", "UI básica"],
-    links: { demo: "#", code: "#" }
+    links: { demo: "#", code: "https://github.com/css40" }
   },
   {
     title: "Bloc de Notas (Android básico)",
@@ -40,7 +40,7 @@ const projects = [
     year: "2026",
     desc: "Aplicación simple de notas: crear, editar y guardar contenido.",
     tags: ["Kotlin", "Android", "Notas"],
-    links: { demo: "#", code: "#" }
+    links: { demo: "#", code: "https://github.com/css40" }
   },
   {
     title: "App Familiar Web (Flask)",
@@ -48,7 +48,44 @@ const projects = [
     year: "2026",
     desc: "Sistema web con login, perfiles y panel admin. UI moderna + BD.",
     tags: ["Flask", "SQLite", "Auth", "UI"],
-    links: { demo: "#", code: "#" }
+    // Ejemplo de cómo se vería desplegado en Render:
+    links: { demo: "https://app-familiar-web.onrender.com", code: "https://github.com/css40" }
+  },
+  {
+    title: "Punto Nica (Plataforma E-commerce)",
+    type: "backend",
+    year: "2026",
+    desc: "Plataforma web de ventas que permite a múltiples vendedores registrar sus perfiles y gestionar sus propios artículos de forma independiente.",
+    tags: ["Java", "Backend", "E-commerce", "MVC"],
+    // Ejemplo de despliegue backend en Render/Railway:
+    links: { demo: "https://punto-nica.onrender.com", code: "https://github.com/css40" }
+  },
+  {
+    title: "Protocolo UNI (Gestión Académica)",
+    type: "ui",
+    year: "2026",
+    desc: "Sitio web centralizado para el control de la carrera universitaria. Almacena información de asignaturas, datos de contacto de profesores, tareas entregadas y calificaciones.",
+    tags: ["HTML", "CSS", "JavaScript", "Gestión"],
+    // Ejemplo de cómo se vería desplegado en GitHub Pages:
+    links: { demo: "https://css40.github.io/protocolo-uni", code: "https://github.com/css40" }
+  },
+  {
+    title: "Media Downloader & Converter",
+    type: "ui",
+    year: "2026",
+    desc: "Aplicación web interactiva que permite la descarga de videos y archivos de audio, incluyendo conversión directa a formato MP3.",
+    tags: ["HTML", "CSS", "JavaScript", "Multimedia"],
+    // Ejemplo de cómo se vería desplegado en GitHub Pages:
+    links: { demo: "https://css40.github.io/media-converter", code: "https://github.com/css40" }
+  },
+  {
+    title: "Generador de Códigos QR",
+    type: "ui",
+    year: "2026",
+    desc: "Herramienta digital simple y veloz para la creación instantánea de códigos QR a partir de textos, enlaces o credenciales personalizadas.",
+    tags: ["JavaScript", "HTML", "CSS", "Utilidades"],
+    // Ejemplo de cómo se vería desplegado en GitHub Pages:
+    links: { demo: "https://css40.github.io/qr-generator", code: "https://github.com/css40" }
   }
 ];
 
@@ -91,6 +128,11 @@ function makeProjectCard(p){
   el.className = "card project";
   el.dataset.type = p.type;
 
+  // Si no hay demo en vivo (como en los proyectos de consola en C), puedes ocultar el botón o dejar el '#'
+  const demoButton = p.links.demo === "#" 
+    ? `<a class="btn ghost disabled" href="#" onclick="return false;" style="opacity: 0.5; cursor: not-allowed;">Consola</a>`
+    : `<a class="btn ghost" href="${p.links.demo}" target="_blank" rel="noreferrer">Demo</a>`;
+
   el.innerHTML = `
     <div class="top">
       <div>
@@ -107,7 +149,7 @@ function makeProjectCard(p){
     </div>
 
     <div class="links">
-      <a class="btn ghost" href="${p.links.demo}" target="_blank" rel="noreferrer">Demo</a>
+      ${demoButton}
       <a class="btn" href="${p.links.code}" target="_blank" rel="noreferrer">Código</a>
     </div>
   `;
